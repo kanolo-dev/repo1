@@ -36,7 +36,7 @@ steps:
         code: false
     type: plugin
     id: CommandLine2
-    displayName: First ever to push
+    displayName: Second ever to push
     timeout: null
     agent: null
     retries: null
