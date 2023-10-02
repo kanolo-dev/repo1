@@ -19,6 +19,7 @@ steps:
         value: echo "from git"
       - name: workingDir
         code: false
+        value: null
     type: plugin
     id: CommandLine1
     displayName: CommandLine
@@ -32,8 +33,10 @@ steps:
   - params:
       - name: COMMANDS
         code: false
+        value: null
       - name: workingDir
         code: false
+        value: null
     type: plugin
     id: CommandLine2
     displayName: Second ever to push
@@ -51,3 +54,4 @@ agent: null
 timeout: null
 maxConcurrency: null
 firstStep: CommandLine1
+code: ''
