@@ -39,7 +39,7 @@ steps:
         value: null
     type: plugin
     id: CommandLine2
-    displayName: Six ever to push
+    displayName: Seven ever to push
     timeout: null
     agent: null
     retries: null
