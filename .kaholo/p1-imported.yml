@@ -5,9 +5,10 @@ steps:
   - params:
       - name: COMMANDS
         code: false
-        value: echo "imported"
+        value: echo "imported2"
       - name: workingDir
         code: false
+        value: null
     type: plugin
     id: CommandLine1
     displayName: imported action
@@ -25,3 +26,4 @@ agent: null
 timeout: null
 maxConcurrency: null
 firstStep: CommandLine1
+code: ''
