@@ -1,0 +1,27 @@
+configurations: []
+executionInputs: []
+triggers: []
+steps:
+  - params:
+      - name: COMMANDS
+        code: false
+        value: echo "imported"
+      - name: workingDir
+        code: false
+    type: plugin
+    id: CommandLine1
+    displayName: imported action
+    timeout: null
+    agent: null
+    retries: null
+    plugin: CommandLine@1.2.2
+    pluginAccount: null
+    method: execute
+    nextStep: null
+kaholoVersion: 6.2.0
+name: p1-3
+description: ''
+agent: null
+timeout: null
+maxConcurrency: null
+firstStep: CommandLine1
