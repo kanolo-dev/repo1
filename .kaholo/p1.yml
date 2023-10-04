@@ -48,10 +48,10 @@ steps:
     method: execute
     nextStep: null
 kaholoVersion: 6.2.0
-name: p1
+name: p1-whatever
 description: ''
 agent: null
-timeout: null
+timeout: ''
 maxConcurrency: null
 firstStep: CommandLine1
 code: ''
