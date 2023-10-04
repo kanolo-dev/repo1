@@ -39,7 +39,7 @@ steps:
         value: null
     type: plugin
     id: CommandLine2
-    displayName: Seven ever to push
+    displayName: Demo command
     timeout: null
     agent: null
     retries: null
@@ -54,3 +54,4 @@ agent: null
 timeout: null
 maxConcurrency: null
 firstStep: CommandLine1
+code: ''
