@@ -4,8 +4,18 @@ triggers: []
 steps:
   - params:
       - name: path
+        value: ./my-path-1
+    type: clone
+    id: clone2
+    displayName: Clone Git Repo
+    timeout: null
+    agent: null
+    retries: null
+    nextStep: clone1
+  - params:
+      - name: path
         code: false
-        value: ./my-path
+        value: ./my-path-2
     type: clone
     id: clone1
     displayName: Clone Git Repo
@@ -30,14 +40,6 @@ steps:
     pluginAccount: null
     method: execute
     nextStep: null
-  - params: []
-    type: clone
-    id: clone2
-    displayName: Clone Git Repo
-    timeout: null
-    agent: null
-    retries: null
-    nextStep: clone1
 kaholoVersion: 6.2.0
 name: p1-clone-2
 description: ''
