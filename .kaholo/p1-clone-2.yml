@@ -19,11 +19,21 @@ steps:
     pluginAccount: null
     method: execute
     nextStep: null
+  - params:
+      - name: path
+        code: false
+        value: ./my-path
+    type: clone
+    id: clone1
+    displayName: Clone Git Repo
+    timeout: null
+    agent: null
+    retries: null
+    nextStep: CommandLine1
 kaholoVersion: 6.2.0
 name: p1-clone-2
 description: ''
 agent: null
 timeout: ''
 maxConcurrency: null
-firstStep: CommandLine1
-code: ''
+firstStep: clone1
