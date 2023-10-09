@@ -5,7 +5,7 @@ steps:
   - params:
       - name: COMMANDS
         code: false
-        value: echo "imported2"
+        value: echo "imported3"
       - name: workingDir
         code: false
         value: null
@@ -26,4 +26,3 @@ agent: null
 timeout: null
 maxConcurrency: null
 firstStep: CommandLine1
-code: ''
