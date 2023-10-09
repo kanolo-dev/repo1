@@ -22,7 +22,7 @@ steps:
     timeout: null
     agent: null
     retries: null
-    nextStep: CommandLine1
+    nextStep: clone3
   - params:
       - name: COMMANDS
         code: false
@@ -40,6 +40,28 @@ steps:
     pluginAccount: null
     method: execute
     nextStep: null
+  - params:
+      - name: path
+        code: false
+        value: ./my-path-3
+    type: clone
+    id: clone3
+    displayName: Clone Git Repo
+    timeout: null
+    agent: null
+    retries: null
+    nextStep: clone4
+  - params:
+      - name: path
+        code: false
+        value: ./my-path-4
+    type: clone
+    id: clone4
+    displayName: Clone Git Repo
+    timeout: null
+    agent: null
+    retries: null
+    nextStep: CommandLine1
 kaholoVersion: 6.2.0
 name: p1-clone-2
 description: ''
