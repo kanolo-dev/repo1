@@ -3,6 +3,17 @@ executionInputs: []
 triggers: []
 steps:
   - params:
+      - name: path
+        code: false
+        value: ./my-path
+    type: clone
+    id: clone1
+    displayName: Clone Git Repo
+    timeout: null
+    agent: null
+    retries: null
+    nextStep: CommandLine1
+  - params:
       - name: COMMANDS
         code: false
         value: echo "imported"
@@ -19,21 +30,18 @@ steps:
     pluginAccount: null
     method: execute
     nextStep: null
-  - params:
-      - name: path
-        code: false
-        value: ./my-path
+  - params: []
     type: clone
-    id: clone1
+    id: clone2
     displayName: Clone Git Repo
     timeout: null
     agent: null
     retries: null
-    nextStep: CommandLine1
+    nextStep: clone1
 kaholoVersion: 6.2.0
 name: p1-clone-2
 description: ''
 agent: null
 timeout: ''
 maxConcurrency: null
-firstStep: clone1
+firstStep: clone2
