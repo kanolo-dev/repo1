@@ -1,22 +1,9 @@
+name: already-exists
+description: ''
+agent: null
+maxConcurrency: 1
+timeout: null
+steps: []
 configurations: []
 executionInputs: []
 triggers: []
-steps:
-  - params: []
-    type: plugin
-    id: CommandLine1
-    displayName: I am new command
-    timeout: null
-    agent: null
-    retries: null
-    plugin: CommandLine@1.2.2
-    pluginAccount: null
-    method: null
-    nextStep: null
-kaholoVersion: 6.2.0
-name: p-b
-description: ''
-agent: null
-timeout: null
-maxConcurrency: 1
-firstStep: CommandLine1
