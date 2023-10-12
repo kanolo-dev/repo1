@@ -1,0 +1,34 @@
+configurations: []
+executionInputs: []
+triggers: []
+steps:
+  - params:
+      - name: COMMANDS
+        code: false
+        value: echo a
+      - name: finishSignal
+        code: false
+        value: exit
+      - name: shell
+        code: false
+        value: default
+      - name: workingDir
+        code: false
+        value: null
+    type: plugin
+    id: CommandLine1
+    displayName: Command Line
+    timeout: null
+    agent: null
+    retries: null
+    plugin: CommandLine@3.2.1
+    pluginAccount: null
+    method: execute
+    nextStep: null
+kaholoVersion: 6.2.0
+name: repo0rg2
+description: ''
+agent: null
+timeout: ''
+maxConcurrency: null
+firstStep: CommandLine1
